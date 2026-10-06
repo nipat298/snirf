@@ -3,8 +3,12 @@
 SNIRF uses the [Semantic Versioning](https://semver.org) scheme.
 
 ### In development
+
 * Add `nirs(i)/data(j)/measurementLists` as an alternative to the indexed-Group measurementList `nirs(i)/data(j)/measurementList(k)`.
 * Add `nirs(i)/data(j)/name` as an optional, free-form string field to label time series (#177)
+* Add `nirs(i)/data(j)/probe/exposureTimes` as a new field to support speckle contrast optical spectroscopy (SCOS) data. (#187)
+* Update description of `measurementList(k)/dataTypeIndex` and `measurementLists/dataTypeIndex` to support indexing of exposure times for SCOS data type(#187)
+* Extend `measurementList/dataType` values to include SCOS data with indexes 501-600, with 501 - Intensity mean, 502 - Intensity variance, 503 - corrected speckle contrast.(#187)
 
 ### `v1.1`
 

@@ -11,71 +11,70 @@ Shared Near Infrared Spectroscopy Format (SNIRF) Specification
 - [SNIRF file specification](#snirf-file-specification)
   * [SNIRF data format summary](#snirf-data-format-summary)
   * [SNIRF data container definitions](#snirf-data-container-definitions)
-       * [formatVersion](#formatversion)
-       * [nirs](#nirsi)
-       * [metaDataTags](#nirsimetadatatags)
-       * [data](#nirsidataj)
-       * [data.name](#nirsidatajname)
-       * [data.dataTimeSeries](#nirsidatajdatatimeseries)
-       * [data.dataOffset](#nirsidatajdataoffset)
-       * [data.time](#nirsidatajtime)
-       * [data.measurementList](#nirsidatajmeasurementlistk)
-       * [data.measurementList.sourceIndex](#nirsidatajmeasurementlistksourceindex)
-       * [data.measurementList.detectorIndex](#nirsidatajmeasurementlistkdetectorindex)
-       * [data.measurementList.wavelengthIndex](#nirsidatajmeasurementlistkwavelengthindex)
-       * [data.measurementList.wavelengthActual](#nirsidatajmeasurementlistkwavelengthactual)
-       * [data.measurementList.wavelengthEmissionActual](#nirsidatajmeasurementlistkwavelengthemissionactual)
-       * [data.measurementList.dataType](#nirsidatajmeasurementlistkdatatype)
-       * [data.measurementList.dataUnit](#nirsidatajmeasurementlistkdataunit)
-       * [data.measurementList.dataTypeLabel](#nirsidatajmeasurementlistkdatatypelabel)
-       * [data.measurementList.dataTypeIndex](#nirsidatajmeasurementlistkdatatypeindex)
-       * [data.measurementList.sourcePower](#nirsidatajmeasurementlistksourcepower)
-       * [data.measurementList.detectorGain](#nirsidatajmeasurementlistkdetectorgain)
-	   * [data.measurementLists](#nirsidatajmeasurementlists)
-	   * [data.measurementLists.sourceIndex](#nirsidatajmeasurementlistssourceindex)
-       * [data.measurementLists.detectorIndex](#nirsidatajmeasurementlistsdetectorindex)
-       * [data.measurementLists.wavelengthIndex](#nirsidatajmeasurementlistswavelengthindex)
-       * [data.measurementLists.wavelengthActual](#nirsidatajmeasurementlistswavelengthactual)
-       * [data.measurementLists.wavelengthEmissionActual](#nirsidatajmeasurementlistswavelengthemissionactual)
-       * [data.measurementLists.dataType](#nirsidatajmeasurementlistsdatatype)
-       * [data.measurementLists.dataUnit](#nirsidatajmeasurementlistsdataunit)
-       * [data.measurementLists.dataTypeLabel](#nirsidatajmeasurementlistsdatatypelabel)
-       * [data.measurementLists.dataTypeIndex](#nirsidatajmeasurementlistsdatatypeindex)
-       * [data.measurementLists.sourcePower](#nirsidatajmeasurementlistssourcepower)
-       * [data.measurementLists.detectorGain](#nirsidatajmeasurementlistsdetectorgain)
-       * [stim](#nirsistimj)
-       * [stim.name](#nirsistimjname)
-       * [stim.data](#nirsistimjdata)
-       * [stim.dataLabels](#nirsistimjdatalabels)
-       * [probe](#nirsiprobe)
-       * [probe.wavelengths](#nirsiprobewavelengths)
-       * [probe.wavelengthsEmission](#nirsiprobewavelengthsemission)
-       * [probe.sourcePos2D](#nirsiprobesourcepos2d)
-       * [probe.sourcePos3D](#nirsiprobesourcepos3d)
-       * [probe.detectorPos2D](#nirsiprobedetectorpos2d)
-       * [probe.detectorPos3D](#nirsiprobedetectorpos3d)
-       * [probe.frequencies](#nirsiprobefrequencies)
-       * [probe.timeDelays](#nirsiprobetimedelays)
-       * [probe.timeDelayWidths](#nirsiprobetimedelaywidths)
-       * [probe.momentOrders](#nirsiprobemomentorders)
-       * [probe.correlationTimeDelays](#nirsiprobecorrelationtimedelays)
-       * [probe.correlationTimeDelayWidths](#nirsiprobecorrelationtimedelaywidths)
-       * [probe.sourceLabels](#nirsiprobesourcelabels)
-       * [probe.detectorLabels](#nirsiprobedetectorlabels)
-       * [probe.landmarkPos2D](#nirsiprobelandmarkpos2d)
-       * [probe.landmarkPos3D](#nirsiprobelandmarkpos3d)
-       * [probe.landmarkLabels](#nirsiprobelandmarklabelsj)
-       * [probe.CoordinateSystem](#nirsiprobecoordinatesystem)
-       * [probe.CoordinateSystemDescription](#nirsiprobecoordinatesystemdescription)
-       * [aux](#nirsiauxj)
-       * [aux.name](#nirsiauxjname)
-       * [aux.dataTimeSeries](#nirsiauxjdatatimeseries)
-       * [aux.dataUnit](#nirsiauxjdataunit)
-       * [aux.time](#nirsiauxjtime)
-       * [aux.timeOffset](#nirsiauxjtimeoffset)
+    * [formatVersion](#formatversion)
+    * [nirs](#nirsi)
+    * [metaDataTags](#nirsimetadatatags)
+    * [data](#nirsidataj)
+    * [data.name](#nirsidatajname)
+    * [data.dataTimeSeries](#nirsidatajdatatimeseries)
+    * [data.dataOffset](#nirsidatajdataoffset)
+    * [data.time](#nirsidatajtime)
+    * [data.measurementList](#nirsidatajmeasurementlistk)
+    * [data.measurementList.sourceIndex](#nirsidatajmeasurementlistksourceindex)
+    * [data.measurementList.detectorIndex](#nirsidatajmeasurementlistkdetectorindex)
+    * [data.measurementList.wavelengthIndex](#nirsidatajmeasurementlistkwavelengthindex)
+    * [data.measurementList.wavelengthActual](#nirsidatajmeasurementlistkwavelengthactual)
+    * [data.measurementList.wavelengthEmissionActual](#nirsidatajmeasurementlistkwavelengthemissionactual)
+    * [data.measurementList.dataType](#nirsidatajmeasurementlistkdatatype)
+    * [data.measurementList.dataUnit](#nirsidatajmeasurementlistkdataunit)
+    * [data.measurementList.dataTypeLabel](#nirsidatajmeasurementlistkdatatypelabel)
+    * [data.measurementList.dataTypeIndex](#nirsidatajmeasurementlistkdatatypeindex)
+    * [data.measurementList.sourcePower](#nirsidatajmeasurementlistksourcepower)
+    * [data.measurementList.detectorGain](#nirsidatajmeasurementlistkdetectorgain)
+    * [data.measurementLists](#nirsidatajmeasurementlists)
+    * [data.measurementLists.sourceIndex](#nirsidatajmeasurementlistssourceindex)
+    * [data.measurementLists.detectorIndex](#nirsidatajmeasurementlistsdetectorindex)
+    * [data.measurementLists.wavelengthIndex](#nirsidatajmeasurementlistswavelengthindex)
+    * [data.measurementLists.wavelengthActual](#nirsidatajmeasurementlistswavelengthactual)
+    * [data.measurementLists.wavelengthEmissionActual](#nirsidatajmeasurementlistswavelengthemissionactual)
+    * [data.measurementLists.dataType](#nirsidatajmeasurementlistsdatatype)
+    * [data.measurementLists.dataUnit](#nirsidatajmeasurementlistsdataunit)
+    * [data.measurementLists.dataTypeLabel](#nirsidatajmeasurementlistsdatatypelabel)
+    * [data.measurementLists.dataTypeIndex](#nirsidatajmeasurementlistsdatatypeindex)
+    * [data.measurementLists.sourcePower](#nirsidatajmeasurementlistssourcepower)
+    * [data.measurementLists.detectorGain](#nirsidatajmeasurementlistsdetectorgain)
+    * [stim](#nirsistimj)
+    * [stim.name](#nirsistimjname)
+    * [stim.data](#nirsistimjdata)
+    * [stim.dataLabels](#nirsistimjdatalabels)
+    * [probe](#nirsiprobe)
+    * [probe.wavelengths](#nirsiprobewavelengths)
+    * [probe.wavelengthsEmission](#nirsiprobewavelengthsemission)
+    * [probe.sourcePos2D](#nirsiprobesourcepos2d)
+    * [probe.sourcePos3D](#nirsiprobesourcepos3d)
+    * [probe.detectorPos2D](#nirsiprobedetectorpos2d)
+    * [probe.detectorPos3D](#nirsiprobedetectorpos3d)
+    * [probe.frequencies](#nirsiprobefrequencies)
+    * [probe.timeDelays](#nirsiprobetimedelays)
+    * [probe.timeDelayWidths](#nirsiprobetimedelaywidths)
+    * [probe.momentOrders](#nirsiprobemomentorders)
+    * [probe.correlationTimeDelays](#nirsiprobecorrelationtimedelays)
+    * [probe.correlationTimeDelayWidths](#nirsiprobecorrelationtimedelaywidths)
+    * [probe.sourceLabels](#nirsiprobesourcelabels)
+    * [probe.detectorLabels](#nirsiprobedetectorlabels)
+    * [probe.landmarkPos2D](#nirsiprobelandmarkpos2d)
+    * [probe.landmarkPos3D](#nirsiprobelandmarkpos3d)
+    * [probe.landmarkLabels](#nirsiprobelandmarklabelsj)
+    * [probe.CoordinateSystem](#nirsiprobecoordinatesystem)
+    * [probe.CoordinateSystemDescription](#nirsiprobecoordinatesystemdescription)
+    * [aux](#nirsiauxj)
+    * [aux.name](#nirsiauxjname)
+    * [aux.dataTimeSeries](#nirsiauxjdatatimeseries)
+    * [aux.dataUnit](#nirsiauxjdataunit)
+    * [aux.time](#nirsiauxjtime)
+    * [aux.timeOffset](#nirsiauxjtimeoffset)
 - [Appendix](#appendix)
 - [Acknowledgement](#acknowledgement)
-
 
 ## Introduction
 
@@ -86,7 +85,7 @@ format files, renamed with the `.snirf` extension.  For a program to be
 The development of the SNIRF specification is conducted in an open manner using the GitHub
 platform. To contribute or provide feedback visit [https://github.com/fNIRS/snirf](https://github.com/fNIRS/snirf).
 
-## Data format 
+## Data format
 
 The HDF5 specifications are defined by the HDF5 group and found at 
 https://www.hdfgroup.org. It is expected that HDF5 future versions will remain 
@@ -106,13 +105,16 @@ including
   with numbers at the end (e.g. `/nirs/data1`, `/nirs/data2`) starting with 
   index 1.  Array indices should be contiguous with no skipped values 
   (an empty group with no sub-member is permitted).
+
 - `string`: a variable-length, null-terminated sequence of characters, i.e. `H5T_C_S1`
   with size set to `H5T_VARIABLE`. At this time HDF5 does not have a UTF16 native type,
   so `H5T_NATIVE_B16` will need to be converted to/from unicode-16 within the read/write code).
-  
+
   > Strings MUST be stored in null-terminated 'variable-length' format to be considered valid. Fixed-length strings and variable-length strings are loaded differently by HDF5 interface implementations.* 
+
 - `integer`: the native integer types `H5T_NATIVE_INT` `H5T` datatype (alias of 
   `H5T_STD_I32BE` or `H5T_STD_I32LE`). Use of 64-bit `long` string types such as `H5T_STD_I64LE` is *not recommended*, although most HDF5 interface implementations will not have issues converting between the two implicitly.
+
 - `numeric`: one of the native double or floating-point types; 
   `H5T_NATIVE_DOUBLE` or `H5T_NATIVE_FLOAT` in `H5T` (alias of 
   `H5T_IEEE_F64BE`,`H5T_IEEE_F64LE`, i.e. "double", or `H5T_IEEE_F32BE`, 
@@ -148,88 +150,89 @@ in the name, for example, `/.../name1` denotes the first sub-group of data eleme
 In the below sections, we use the notations `"(i)"` `"(j)"` or `"(k)"` inside the 
 HDF5 location paths to denote the indices of sub-elements when multiplicity presents.
 
-
 ### SNIRF data format summary
 
 Note that this table serves as machine-readable schema for the SNIRF format. Its format may not be altered.
 
 [//]: # (SCHEMA BEGIN)
 
-|  SNIRF-formatted NIRS data structure  |            Meaning of the data               |     Type       |
-|---------------------------------------|----------------------------------------------|----------------|
-| `/formatVersion`                      | * SNIRF format version                       |   `"s"`      * |
-| `/nirs{i}`                            | * Root-group for 1 or more NIRS datasets     |   `{i}`      * |
-|     `metaDataTags`                    | * Root-group for metadata headers            |   `{.}`      * |
-|        `SubjectID`                    | * Subject identifier                         |   `"s"`      * |
-|        `MeasurementDate`              | * Date of the measurement                    |   `"s"`      * |
-|        `MeasurementTime`              | * Time of the measurement                    |   `"s"`      * |
-|        `LengthUnit`                   | * Length unit (case sensitive)               |   `"s"`      * |
-|        `TimeUnit`                     | * Time unit (case sensitive)                 |   `"s"`      * |
-|        `FrequencyUnit`                | * Frequency unit (case sensitive)            |   `"s"`      * |
-|         ...                           | * Additional user-defined metadata entries   |                |
-|     `data{i}`                         | * Root-group for 1 or more data blocks       |   `{i}`      * |
-|        `name`                         | * Name of the data block                     |   `"s"`        |
-|        `dataTimeSeries`               | * Time-varying signals from all channels     | `[[<f>,...]]`* |
-|        `time`                         | * Time (in `TimeUnit` defined in metaDataTag)|  `[<f>,...]` * |
-|        `dataOffset`                   | * Optional offset value per channel          |  `[<f>,...]`   |
-|        `measurementList{i}`           | * Per-channel source-detector information    |   `{i}`     ^¹ |
-|            `sourceIndex`              | * Source index for a given channel           |   `<i>`      * |
-|            `detectorIndex`            | * Detector index for a given channel         |   `<i>`      * |
-|            `wavelengthIndex`          | * Wavelength index for a given channel       |   `<i>`      * |
-|            `wavelengthActual`         | * Actual wavelength for a given channel      |   `<f>`        |
-|            `wavelengthEmissionActual` | * Actual emission wavelength for a channel   |   `<f>`        |
-|            `dataType`                 | * Data type for a given channel              |   `<i>`      * |
-|            `dataUnit`                 | * SI unit for a given channel                |   `"s"`        |
-|            `dataTypeLabel`            | * Data type name for a given channel         |   `"s"`        |
-|            `dataTypeIndex`            | * Data type index for a given channel        |   `<i>`      * |
-|            `sourcePower`              | * Source power for a given channel           |   `<f>`        |
-|            `detectorGain`             | * Detector gain for a given channel          |   `<f>`        |
-|        `measurementLists`             | * source-detector information                |  `{.}`      ^¹ |
-|            `sourceIndex`              | * Source index for each channel              |   `[<i>,...]`* |
-|            `detectorIndex`            | * Detector index for each channel            |   `[<i>,...]`* |
-|            `wavelengthIndex`          | * Wavelength index for each channel          |   `[<i>,...]`* |
-|            `wavelengthActual`         | * Actual wavelength for each channel         |   `[<f>,...]`  |
-|            `wavelengthEmissionActual` | * Actual emission wavelength for each channel|   `[<f>,...]`  |
-|            `dataType`                 | * Data type for each channel                 |   `[<i>,...]`* |
-|            `dataUnit`                 | * SI unit for each channel                   |   `["s",...]`  |
-|            `dataTypeLabel`            | * Data type name for each channel            |   `["s",...]`  |
-|            `dataTypeIndex`            | * Data type index for each channel           |   `[<i>,...]`* |
-|            `sourcePower`              | * Source power for each channel              |   `[<f>,...]`  |
-|            `detectorGain`             | * Detector gain for each channel             |   `[<f>,...]`  |
-|     `stim{i}`                         | * Root-group for stimulus measurements       |   `{i}`        |
-|         `name`                        | * Name of the stimulus data                  |   `"s"`      + |
-|         `data`                        | * Data stream of the stimulus channel        | `[[<f>,...]]` +|
-|         `dataLabels`                  | * Names of additional columns of stim data   |  `["s",...]`   |
-|     `probe`                           | * Root group for NIRS probe information      |   `{.}`      * |
-|         `wavelengths`                 | * List of wavelengths (in nm)                |  `[<f>,...]` * |
-|         `wavelengthsEmission`         | * List of emission wavelengths (in nm)       |  `[<f>,...]`   |
-|         `sourcePos2D`                 | * Source 2-D positions in `LengthUnit`       | `[[<f>,...]]`*¹|
-|         `sourcePos3D`                 | * Source 3-D positions in `LengthUnit`       | `[[<f>,...]]`*¹|
-|         `detectorPos2D`               | * Detector 2-D positions in `LengthUnit`     | `[[<f>,...]]`*²|
-|         `detectorPos3D`               | * Detector 3-D positions in `LengthUnit`     | `[[<f>,...]]`*²|
-|         `frequencies`                 | * Modulation frequency list                  |  `[<f>,...]`   |
-|         `timeDelays`                  | * Time delays for gated time-domain data     |  `[<f>,...]`   |
-|         `timeDelayWidths`             | * Time delay width for gated time-domain data|  `[<f>,...]`   |
-|         `momentOrders`                | * Moment orders of the moment TD data        |  `[<f>,...]`   |
-|         `correlationTimeDelays`       | * Time delays for DCS measurements           |  `[<f>,...]`   |
-|         `correlationTimeDelayWidths`  | * Time delay width for DCS measurements      |  `[<f>,...]`   |
-|         `sourceLabels`                | * String arrays specifying source names      |  `[["s",...]]` |
-|         `detectorLabels`              | * String arrays specifying detector names    |  `["s",...]`   |
-|         `landmarkPos2D`               | * Anatomical landmark 2-D positions          | `[[<f>,...]]`  |
-|         `landmarkPos3D`               | * Anatomical landmark 3-D positions          | `[[<f>,...]]`  |
-|         `landmarkLabels`              | * String arrays specifying landmark names    |  `["s",...]`   |
-|         `coordinateSystem`            | * Coordinate system used in probe description|   `"s"`        |
-|         `coordinateSystemDescription` | * Description of coordinate system           |   `"s"`        |
-|     `aux{i}`                          | * Root-group for auxiliary measurements      |   `{i}`        |
-|         `name`                        | * Name of the auxiliary channel              |   `"s"`      + |
-|         `dataTimeSeries`              | * Data acquired from the auxiliary channel   | `[[<f>,...]]` +|
-|         `dataUnit`                    | * SI unit of the auxiliary channel           |   `"s"`        |
-|         `time`                        | * Time (in `TimeUnit`) for auxiliary data    |  `[<f>,...]` + |
-|         `timeOffset`                  | * Time offset of auxiliary channel data      |  `[<f>,...]`   |
+| SNIRF-formatted NIRS data structure | Meaning of the data                           | Type            |
+| ----------------------------------- | --------------------------------------------- | --------------- |
+| `/formatVersion`                    | * SNIRF format version                        | `"s"`      *    |
+| `/nirs{i}`                          | * Root-group for 1 or more NIRS datasets      | `{i}`      *    |
+| `metaDataTags`                      | * Root-group for metadata headers             | `{.}`      *    |
+| `SubjectID`                         | * Subject identifier                          | `"s"`      *    |
+| `MeasurementDate`                   | * Date of the measurement                     | `"s"`      *    |
+| `MeasurementTime`                   | * Time of the measurement                     | `"s"`      *    |
+| `LengthUnit`                        | * Length unit (case sensitive)                | `"s"`      *    |
+| `TimeUnit`                          | * Time unit (case sensitive)                  | `"s"`      *    |
+| `FrequencyUnit`                     | * Frequency unit (case sensitive)             | `"s"`      *    |
+| ...                                 | * Additional user-defined metadata entries    |                 |
+| `data{i}`                           | * Root-group for 1 or more data blocks        | `{i}`      *    |
+| `name`                              | * Name of the data block                      | `"s"`           |
+| `dataTimeSeries`                    | * Time-varying signals from all channels      | `[[<f>,...]]`*  |
+| `time`                              | * Time (in `TimeUnit` defined in metaDataTag) | `[<f>,...]` *   |
+| `dataOffset`                        | * Optional offset value per channel           | `[<f>,...]`     |
+| `measurementList{i}`                | * Per-channel source-detector information     | `{i}`     ^¹    |
+| `sourceIndex`                       | * Source index for a given channel            | `<i>`      *    |
+| `detectorIndex`                     | * Detector index for a given channel          | `<i>`      *    |
+| `wavelengthIndex`                   | * Wavelength index for a given channel        | `<i>`      *    |
+| `wavelengthActual`                  | * Actual wavelength for a given channel       | `<f>`           |
+| `wavelengthEmissionActual`          | * Actual emission wavelength for a channel    | `<f>`           |
+| `dataType`                          | * Data type for a given channel               | `<i>`      *    |
+| `dataUnit`                          | * SI unit for a given channel                 | `"s"`           |
+| `dataTypeLabel`                     | * Data type name for a given channel          | `"s"`           |
+| `dataTypeIndex`                     | * Data type index for a given channel         | `<i>`      *    |
+| `sourcePower`                       | * Source power for a given channel            | `<f>`           |
+| `detectorGain`                      | * Detector gain for a given channel           | `<f>`           |
+| `measurementLists`                  | * source-detector information                 | `{.}`      ^¹   |
+| `sourceIndex`                       | * Source index for each channel               | `[<i>,...]`*    |
+| `detectorIndex`                     | * Detector index for each channel             | `[<i>,...]`*    |
+| `wavelengthIndex`                   | * Wavelength index for each channel           | `[<i>,...]`*    |
+| `wavelengthActual`                  | * Actual wavelength for each channel          | `[<f>,...]`     |
+| `wavelengthEmissionActual`          | * Actual emission wavelength for each channel | `[<f>,...]`     |
+| `dataType`                          | * Data type for each channel                  | `[<i>,...]`*    |
+| `dataUnit`                          | * SI unit for each channel                    | `["s",...]`     |
+| `dataTypeLabel`                     | * Data type name for each channel             | `["s",...]`     |
+| `dataTypeIndex`                     | * Data type index for each channel            | `[<i>,...]`*    |
+| `sourcePower`                       | * Source power for each channel               | `[<f>,...]`     |
+| `detectorGain`                      | * Detector gain for each channel              | `[<f>,...]`     |
+| `stim{i}`                           | * Root-group for stimulus measurements        | `{i}`           |
+| `name`                              | * Name of the stimulus data                   | `"s"`      +    |
+| `data`                              | * Data stream of the stimulus channel         | `[[<f>,...]]` + |
+| `dataLabels`                        | * Names of additional columns of stim data    | `["s",...]`     |
+| `probe`                             | * Root group for NIRS probe information       | `{.}`      *    |
+| `wavelengths`                       | * List of wavelengths (in nm)                 | `[<f>,...]` *   |
+| `wavelengthsEmission`               | * List of emission wavelengths (in nm)        | `[<f>,...]`     |
+| `sourcePos2D`                       | * Source 2-D positions in `LengthUnit`        | `[[<f>,...]]`*¹ |
+| `sourcePos3D`                       | * Source 3-D positions in `LengthUnit`        | `[[<f>,...]]`*¹ |
+| `detectorPos2D`                     | * Detector 2-D positions in `LengthUnit`      | `[[<f>,...]]`*² |
+| `detectorPos3D`                     | * Detector 3-D positions in `LengthUnit`      | `[[<f>,...]]`*² |
+| `frequencies`                       | * Modulation frequency list                   | `[<f>,...]`     |
+| `timeDelays`                        | * Time delays for gated time-domain data      | `[<f>,...]`     |
+| `timeDelayWidths`                   | * Time delay width for gated time-domain data | `[<f>,...]`     |
+| `momentOrders`                      | * Moment orders of the moment TD data         | `[<f>,...]`     |
+| `correlationTimeDelays`             | * Time delays for DCS measurements            | `[<f>,...]`     |
+| `correlationTimeDelayWidths`        | * Time delay width for DCS measurements       | `[<f>,...]`     |
+| `exposureTimes`                     | * Exposure time for SCOS measurements         | `[<f>,...]`     |
+| `sourceLabels`                      | * String arrays specifying source names       | `[["s",...]]`   |
+| `detectorLabels`                    | * String arrays specifying detector names     | `["s",...]`     |
+| `landmarkPos2D`                     | * Anatomical landmark 2-D positions           | `[[<f>,...]]`   |
+| `landmarkPos3D`                     | * Anatomical landmark 3-D positions           | `[[<f>,...]]`   |
+| `landmarkLabels`                    | * String arrays specifying landmark names     | `["s",...]`     |
+| `coordinateSystem`                  | * Coordinate system used in probe description | `"s"`           |
+| `coordinateSystemDescription`       | * Description of coordinate system            | `"s"`           |
+| `aux{i}`                            | * Root-group for auxiliary measurements       | `{i}`           |
+| `name`                              | * Name of the auxiliary channel               | `"s"`      +    |
+| `dataTimeSeries`                    | * Data acquired from the auxiliary channel    | `[[<f>,...]]` + |
+| `dataUnit`                          | * SI unit of the auxiliary channel            | `"s"`           |
+| `time`                              | * Time (in `TimeUnit`) for auxiliary data     | `[<f>,...]` +   |
+| `timeOffset`                        | * Time offset of auxiliary channel data       | `[<f>,...]`     |
 
-[//]: # (SCHEMA END)
+
 
 In the above schema table, the used notations are explained below:
+
 * `{.}` represents a simple HDF5 group
 * `{i}` represents an HDF5 group with one or multiple sub-groups (i.e. an indexed-group)
 * `<i>` represents an integer value
@@ -245,7 +248,8 @@ In the above schema table, the used notations are explained below:
 
 ### SNIRF data container definitions
 
-#### /formatVersion 
+#### /formatVersion
+
 * **Presence**: required
 * **Type**:  string
 * **Location**: `/formatVersion`
@@ -253,7 +257,9 @@ In the above schema table, the used notations are explained below:
 This is a string that specifies the version of the file format.  This document 
 describes format version “1.0”
 	
-#### /nirs(i) 
+
+#### /nirs(i)
+
 * **Presence**: required
 * **Type**:  indexed group
 * **Location**: `/nirs(i)`
@@ -262,13 +268,14 @@ This group stores one set of NIRS data.  This can be extended by adding the coun
 number (e.g. `/nirs1`, `/nirs2`,...) to the group name. This is intended to 
 allow the storage of 1 or more complete NIRS datasets inside a single SNIRF 
 document.  For example, a two-subject hyperscanning can be stored using the notation
+
 * `/nirs1` =  first subject's data
 * `/nirs2` =  second subject's data
-The use of a non-indexed (e.g. `/nirs`) entry is allowed when only one entry 
-is present and is assumed to be entry 1.
-
+  The use of a non-indexed (e.g. `/nirs`) entry is allowed when only one entry 
+  is present and is assumed to be entry 1.
 
 #### /nirs(i)/metaDataTags
+
 * **Presence**: required 
 * **Type**:  group
 * **Location**: `/nirs(i)/metaDataTags`
@@ -282,6 +289,7 @@ data types. Sub-groups should not be used to organize metadata records: a member
 The below five metadata records are minimally required in a SNIRF file
 
 #### /nirs(i)/metaDataTags/SubjectID
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/SubjectID`
@@ -289,23 +297,27 @@ The below five metadata records are minimally required in a SNIRF file
 This record stores the string-valued ID of the study subject or experiment.
 
 #### /nirs(i)/metaDataTags/MeasurementDate
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/MeasurementDate`
 
 This record stores the date of the measurement as a string. The format of the date
 string must either be `"unknown"`, or follow the ISO 8601 date string format `YYYY-MM-DD`, where
+
 - `YYYY` is the 4-digit year
 - `MM` is the 2-digit month (padding zero if a single digit)
 - `DD` is the 2-digit date (padding zero if a single digit)
 
 #### /nirs(i)/metaDataTags/MeasurementTime
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/MeasurementTime`
 
 This record stores the time of the measurement as a string. The format of the time
 string must either be `"unknown"` or follow the ISO 8601 time string format `hh:mm:ss.sTZD`, where
+
 - `hh` is the 2-digit hour
 - `mm` is the 2-digit minute
 - `ss` is the 2-digit second
@@ -313,6 +325,7 @@ string must either be `"unknown"` or follow the ISO 8601 time string format `hh:
 - `TZD` is the time zone designator (`Z` or `+hh:mm` or `-hh:mm`)
 
 #### /nirs(i)/metaDataTags/LengthUnit
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/LengthUnit`
@@ -322,6 +335,7 @@ measurement. Sample length units include "mm", "cm", and "m". A value of
 "um" is the same as "μm", i.e. micrometer.
 
 #### /nirs(i)/metaDataTags/TimeUnit
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/TimeUnit`
@@ -331,6 +345,7 @@ measurement. Sample time units include "s", and "ms". A value of "us"
 is the same as "μs", i.e. microsecond.
 
 #### /nirs(i)/metaDataTags/FrequencyUnit
+
 * **Presence**: required  as part of `metaDataTags`
 * **Type**:  string
 * **Location**: `/nirs(i)/metaDataTags/FrequencyUnit`
@@ -346,19 +361,19 @@ are allowed.
 
 Additional metadata record samples can be found in the below table.
 
-| Metadata Key Name | Metadata value |
-|-------------------|----------------|
-|ManufacturerName | "Company Name" |
-|Model | "Model Name" |
-|SubjectName | "LastName, FirstName" |
-|DateOfBirth | "YYYY-MM-DD" |
-|AcquisitionStartTime | "1569465620" |
-|StudyID | "Infant Brain Development" |
-|StudyDescription | "In this study, we measure ...." |
-|AccessionNumber | "##########################" |
-|InstanceNumber  | 2 |
-|CalibrationFileName | "phantomcal_121015.snirf" |
-|UnixTime | "1569465667" |
+| Metadata Key Name    | Metadata value                   |
+| -------------------- | -------------------------------- |
+| ManufacturerName     | "Company Name"                   |
+| Model                | "Model Name"                     |
+| SubjectName          | "LastName, FirstName"            |
+| DateOfBirth          | "YYYY-MM-DD"                     |
+| AcquisitionStartTime | "1569465620"                     |
+| StudyID              | "Infant Brain Development"       |
+| StudyDescription     | "In this study, we measure ...." |
+| AccessionNumber      | "##########################"     |
+| InstanceNumber       | 2                                |
+| CalibrationFileName  | "phantomcal_121015.snirf"        |
+| UnixTime             | "1569465667"                     |
 
 The metadata records `"StudyID"` and `"AccessionNumber"` are unique strings that 
 can be used to link the current dataset to a particular study and a particular 
@@ -374,7 +389,8 @@ data segments during a long measurement session.
 The metadata record `"UnixTime"` defines the Unix Epoch Time, i.e. the total elapse
 time in seconds since 1970-01-01T00:00:00Z (UTC) minus the leap seconds.
 
-#### /nirs(i)/data(j) 
+#### /nirs(i)/data(j)
+
 * **Presence**: required
 * **Type**:  indexed group
 * **Location**: `/nirs(i)/data(j)`
@@ -383,11 +399,12 @@ This group stores one block of NIRS data.  This can be extended adding the
 count number (e.g. `data1`, `data2`,...) to the group name.  This is intended to 
 allow the storage of 1 or more blocks of NIRS data from within the same `/nirs` 
 entry
+
 * `/nirs/data1` =  data block 1
-* `/nirs/data2` =  data block 2	
+* `/nirs/data2` =  data block 2
 
+#### /nirs(i)/data(j)/name
 
-#### /nirs(i)/data(j)/name 
 * **Presence**: optional
 * **Type**:  string
 * **Location**: `/nirs(i)/data(j)/name`
@@ -398,8 +415,8 @@ indistinguishable by `measurementList(k).dataType`, `measurementList(k).dataType
 and `measurementList(k).dataTypeIndex` (for example changes in optical density
 which were filtered by different artifact-rejection methods).
 
+#### /nirs(i)/data(j)/dataTimeSeries
 
-#### /nirs(i)/data(j)/dataTimeSeries 
 * **Presence**: required
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/data(j)/dataTimeSeries`
@@ -415,8 +432,8 @@ filter or [3rd party filters such as `305-LZO` or `307-bzip2`](https://portal.hd
 
 Chunked data is allowed to support real-time streaming of data in this array. 
 
+#### /nirs(i)/data(j)/dataOffset
 
-#### /nirs(i)/data(j)/dataOffset 
 * **Presence**: optional
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/dataOffset`
@@ -427,8 +444,8 @@ This stores an optional offset value per channel, which, when added to
 The length of this array is equal to the <number of channels> as represented
 by the second dimension in the `dataTimeSeries`.
 
+#### /nirs(i)/data(j)/time
 
-#### /nirs(i)/data(j)/time 
 * **Presence**: required
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/time`
@@ -442,15 +459,16 @@ second entry is the sample time spacing in `TimeUnit` specified in the
 `metaDataTags`. The default time unit is in second ("s"). For example, 
 a time spacing of 0.2 (s) indicates a sampling rate of 5 Hz.
 		
+
 * **Option 1** - The size of this variable is `<number of time points>` and 
-             corresponds to the sample time of every data point
+         corresponds to the sample time of every data point
 * **Option 2**-  The size of this variable is `<2>` and corresponds to the start
-	     time and sample spacing.
+     time and sample spacing.
 
 Chunked data is allowed to support real-time streaming of data in this array.
 
+#### /nirs(i)/data(j)/measurementList(k)
 
-#### /nirs(i)/data(j)/measurementList(k) 
 * **Presence**: required if `measurementLists` is not present
 * **Type**:  indexed group
 * **Location**: `/nirs(i)/data(j)/measurementList(k)`
@@ -465,29 +483,33 @@ describes the corresponding column in the data matrix. For example, the
 Each element of the array is a structure which describes the measurement 
 conditions for this data with the following fields:
 
+#### /nirs(i)/data(j)/measurementList(k)/sourceIndex
 
-#### /nirs(i)/data(j)/measurementList(k)/sourceIndex 
 * **Presence**: required
 * **Type**:  integer
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/sourceIndex`
 
 Index of the source.
 	
-#### /nirs(i)/data(j)/measurementList(k)/detectorIndex 
+
+#### /nirs(i)/data(j)/measurementList(k)/detectorIndex
+
 * **Presence**: required
 * **Type**:  integer
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/detectorIndex`
 
 Index of the detector.
 
-#### /nirs(i)/data(j)/measurementList(k)/wavelengthIndex 
+#### /nirs(i)/data(j)/measurementList(k)/wavelengthIndex
+
 * **Presence**: required
 * **Type**:  integer
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/wavelengthIndex`
 
 Index of the "nominal" wavelength (in `probe.wavelengths`).
 
-#### /nirs(i)/data(j)/measurementList(k)/wavelengthActual 
+#### /nirs(i)/data(j)/measurementList(k)/wavelengthActual
+
 * **Presence**: optional
 * **Type**:  numeric
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/wavelengthActual`
@@ -495,27 +517,32 @@ Index of the "nominal" wavelength (in `probe.wavelengths`).
 Actual (measured) wavelength in nm, if available, for the source in a given channel.
 
 #### /nirs(i)/data(j)/measurementList(k)/wavelengthEmissionActual
+
 * **Presence**: optional
 * **Type**:  numeric
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/wavelengthEmissionActual`
 
 Actual (measured) emission wavelength in nm, if available, for the source in a given channel.
 	
-#### /nirs(i)/data(j)/measurementList(k)/dataType 
+
+#### /nirs(i)/data(j)/measurementList(k)/dataType
+
 * **Presence**: required
 * **Type**:  integer
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/dataType`
 
 Data-type identifier. See Appendix for list possible values.
 
-#### /nirs(i)/data(j)/measurementList(k)/dataUnit 
+#### /nirs(i)/data(j)/measurementList(k)/dataUnit
+
 * **Presence**: optional
 * **Type**:  string
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/dataUnit`
 
 International System of Units (SI units) identifier for the given channel. Encoding should follow the [CMIXF-12 standard](https://people.csail.mit.edu/jaffer/MIXF/CMIXF-12), avoiding special unicode symbols like U+03BC (μ) or U+00B5 (µ) and using '/' rather than 'per' for units such as `V/us`. The recommended export format is in unscaled units such as V, s, Mole.
 
-#### /nirs(i)/data(j)/measurementList(k)/dataTypeLabel 
+#### /nirs(i)/data(j)/measurementList(k)/dataTypeLabel
+
 * **Presence**: optional
 * **Type**:  string
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/dataTypeLabel`
@@ -523,21 +550,24 @@ International System of Units (SI units) identifier for the given channel. Encod
 Data-type label. Only required if dataType is "processed" (`99999`). See Appendix 
 for list of possible values.
 
-#### /nirs(i)/data(j)/measurementList(k)/dataTypeIndex 
+#### /nirs(i)/data(j)/measurementList(k)/dataTypeIndex
+
 * **Presence**: required
 * **Type**:  integer
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/dataTypeIndex`
 
 Data-type specific parameter index. The data type index specifies additional data type specific parameters that are further elaborated by other fields in the probe structure, as detailed below. Note that where multiple parameters are required, the same index must be used into each (examples include data types such as Time Domain and Diffuse Correlation Spectroscopy). One use of this parameter is as a stimulus condition index when `measurementList(k).dataType = 99999` (i.e, `processed` and `measurementList(k).dataTypeLabel = 'HRF ...'` .
 
-#### /nirs(i)/data(j)/measurementList(k)/sourcePower 
+#### /nirs(i)/data(j)/measurementList(k)/sourcePower
+
 * **Presence**: optional
 * **Type**:  numeric
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/sourcePower`
 
 The units are not defined, unless the user takes the option of using a `metaDataTag` as described below.
 
-#### /nirs(i)/data(j)/measurementList(k)/detectorGain 
+#### /nirs(i)/data(j)/measurementList(k)/detectorGain
+
 * **Presence**: optional
 * **Type**:  numeric
 * **Location**: `/nirs(i)/data(j)/measurementList(k)/detectorGain`
@@ -578,6 +608,7 @@ As described below, optional variables `probe.sourceLabels` and
 label for sources and detectors.
 
 #### /nirs(i)/data(j)/measurementLists
+
 * **Presence**: required if measurementList is not present
 * **Type**:  group
 * **Location**: `/nirs(i)/data(j)/measurementLists`
@@ -588,28 +619,33 @@ This group is required only if the indexed-group format `/nirs(i)/data(j)/measur
 
 The arrays of `measurementLists` are:
 
-#### /nirs(i)/data(j)/measurementLists/sourceIndex 
+#### /nirs(i)/data(j)/measurementLists/sourceIndex
+
 * **Presence**: required if measurementLists is present
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/sourceIndex`
 
 Source indices for each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 	
-#### /nirs(i)/data(j)/measurementLists/detectorIndex 
+
+#### /nirs(i)/data(j)/measurementLists/detectorIndex
+
 * **Presence**: required if measurementLists is present
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/detectorIndex`
 
 Detector indices for each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 
-#### /nirs(i)/data(j)/measurementLists/wavelengthIndex 
+#### /nirs(i)/data(j)/measurementLists/wavelengthIndex
+
 * **Presence**: required if measurementLists is present
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/wavelengthIndex`
 
 Index of the "nominal" wavelength (in `probe.wavelengths`) for each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 
-#### /nirs(i)/data(j)/measurementLists/wavelengthActual 
+#### /nirs(i)/data(j)/measurementLists/wavelengthActual
+
 * **Presence**: optional
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/wavelengthActual`
@@ -617,55 +653,64 @@ Index of the "nominal" wavelength (in `probe.wavelengths`) for each channel. A 1
 Actual (measured) wavelength in nm, if available, for the source in each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 
 #### /nirs(i)/data(j)/measurementLists/wavelengthEmissionActual
+
 * **Presence**: optional
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/wavelengthEmissionActual`
 
 Actual (measured) emission wavelength in nm, if available, for the source in each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 	
-#### /nirs(i)/data(j)/measurementLists/dataType 
+
+#### /nirs(i)/data(j)/measurementLists/dataType
+
 * **Presence**: required if measurementLists is present
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/dataType`
 
 A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. See Appendix for list of possible values.
 
-#### /nirs(i)/data(j)/measurementLists/dataUnit 
+#### /nirs(i)/data(j)/measurementLists/dataUnit
+
 * **Presence**: optional
 * **Type**:  string 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/dataUnit`
 
 International System of Units (SI units) identifier for each channel. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 
-#### /nirs(i)/data(j)/measurementLists/dataTypeLabel 
+#### /nirs(i)/data(j)/measurementLists/dataTypeLabel
+
 * **Presence**: optional
 * **Type**:  string 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/dataTypeLabel`
 
 Data-type label. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`.
 
-#### /nirs(i)/data(j)/measurementLists/dataTypeIndex 
+#### /nirs(i)/data(j)/measurementLists/dataTypeIndex
+
 * **Presence**: required if measurementLists is present
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/dataTypeIndex`
 
-Data-type specific parameter indices. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Note that the Time Domain and Diffuse Correlation Spectroscopy data types have two additional parameters and so `dataTimeIndex` must be a 2-D array with 2 columns that index the additional parameters.
+Data-type specific parameter indices. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Note that the Time Domain, Diffuse Correlation Spectroscopy and Speckle Contrast Optical Spectroscopy data types have two additional parameters and so `dataTimeIndex` must be a 2-D array with 2 columns that index the additional parameters.
 
-#### /nirs(i)/data(j)/measurementLists/sourcePower 
+#### /nirs(i)/data(j)/measurementLists/sourcePower
+
 * **Presence**: optional
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/sourcePower`
 
 A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Units are optionally defined in `metaDataTags`.
 
-#### /nirs(i)/data(j)/measurementLists/detectorGain 
+#### /nirs(i)/data(j)/measurementLists/detectorGain
+
 * **Presence**: optional
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/detectorGain`
 
 A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Units are optionally defined in `metaDataTags`.
 
-#### /nirs(i)/stim(j) 
+#### /nirs(i)/stim(j)
+
 * **Presence**: optional
 * **Type**:  indexed group
 * **Location**: `/nirs(i)/stim(j)`
@@ -673,16 +718,16 @@ A 1-D array with length equal to the size of the second dimension of `/nirs(i)/d
 This is an array describing any stimulus conditions. Each element of the array 
 has the following required fields.
 
+#### /nirs(i)/stim(j)/name
 
-#### /nirs(i)/stim(j)/name 
 * **Presence**: required  as part of `stim(i)` 
 * **Type**:  string
 * **Location**: `/nirs(i)/stim(j)/name`
 
 This is a string describing the j<sup>th</sup> stimulus condition.
 
+#### /nirs(i)/stim(j)/data
 
-#### /nirs(i)/stim(j)/data 
 * **Presence**: required  as part of `stim(i)` 
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/stim(j)/data`
@@ -701,6 +746,7 @@ each stimulus trial. An optional record `/nirs(i)/stim(j)/dataLabels` can be
 used to annotate the meanings of each data column. 
 
 #### /nirs(i)/stim(j)/dataLabels
+
 * **Presence**: optional 
 * **Type**:  string 1-D array
 * **Location**: `/nirs(i)/stim(j)/dataLabels(k)`
@@ -710,7 +756,8 @@ This is a string array providing annotations for each data column in
 the total length of this array must be the same as the column number
 of `/nirs(i)/stim(j)/data`, including the first 3 required columns.
 
-#### /nirs(i)/probe 
+#### /nirs(i)/probe
+
 * **Presence**: required 
 * **Type**:  group
 * **Location**: `/nirs(i)/probe `
@@ -718,7 +765,8 @@ of `/nirs(i)/stim(j)/data`, including the first 3 required columns.
 This is a structured variable that describes the probe (source-detector) 
 geometry.  This variable has a number of required fields.
 
-#### /nirs(i)/probe/wavelengths 
+#### /nirs(i)/probe/wavelengths
+
 * **Presence**: required 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/wavelengths`
@@ -742,8 +790,8 @@ generally have measurements at all wavelengths.
 This field must be present, but can be empty, for example, in the case that the stored
 data are processed data (`dataType=99999`, see Appendix).
 
+#### /nirs(i)/probe/wavelengthsEmission
 
-#### /nirs(i)/probe/wavelengthsEmission 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/wavelengthsEmission`
@@ -757,8 +805,8 @@ Please note that this field stores the "nominal" emission wavelengths. If the pr
 (measured) emission wavelengths differ from the nominal ones, one can store those
 in the `measurementList.wavelengthEmissionActual` field in a per-channel fashion.
 
+#### /nirs(i)/probe/sourcePos2D
 
-#### /nirs(i)/probe/sourcePos2D 
 * **Presence**: at least one of `sourcePos2D` or `sourcePos3D` is required
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/sourcePos2D`
@@ -769,8 +817,8 @@ This field has size `<number of sources> x 2`. For example,
 `probe.sourcePos2D(1,:) = [1.4 1]`, and `LengthUnit='cm'` places source 
 number 1 at x=1.4 cm and y=1 cm.
 
+#### /nirs(i)/probe/sourcePos3D
 
-#### /nirs(i)/probe/sourcePos3D 
 * **Presence**: at least one of `sourcePos2D` or `sourcePos3D` is required
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/sourcePos3D`
@@ -778,8 +826,8 @@ number 1 at x=1.4 cm and y=1 cm.
 This field describes the position (in `LengthUnit` units) of each source 
 optode in 3D. This field has size `<number of sources> x 3`.
 
-
 #### /nirs(i)/probe/detectorPos2D
+
 * **Presence**: at least one of `detectorPos2D` or `detectorPos3D` is required
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/detectorPos2D`
@@ -787,8 +835,8 @@ optode in 3D. This field has size `<number of sources> x 3`.
 Same as `probe.sourcePos2D`, but describing the detector positions in a 
 flattened 2D probe layout.
 
+#### /nirs(i)/probe/detectorPos3D
 
-#### /nirs(i)/probe/detectorPos3D 
 * **Presence**: at least one of `detectorPos2D` or `detectorPos3D` is required
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/detectorPos3D`
@@ -796,8 +844,8 @@ flattened 2D probe layout.
 This field describes the position (in `LengthUnit` units) of each detector 
 optode in 3D, defined similarly to `sourcePos3D`.
 
+#### /nirs(i)/probe/frequencies
 
-#### /nirs(i)/probe/frequencies 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/frequencies`
@@ -806,8 +854,8 @@ This field describes the frequencies used (in `FrequencyUnit` units)  for
 frequency domain measurements. This field is only required for frequency 
 domain data types, and is indexed by `measurementList(k).dataTypeIndex`.
 
+#### /nirs(i)/probe/timeDelays
 
-#### /nirs(i)/probe/timeDelays 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/timeDelays`
@@ -817,8 +865,8 @@ This field is only required for gated time domain data types, and is indexed by
 `measurementList(k).dataTypeIndex`. The indexing of this field is paired with 
 the indexing of `probe.timeDelayWidths`. 
 
+#### /nirs(i)/probe/timeDelayWidths
 
-#### /nirs(i)/probe/timeDelayWidths 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/timeDelayWidths`
@@ -828,8 +876,8 @@ measurements. This field is only required for gated time domain data types, and
 is indexed by `measurementList(k).dataTypeIndex`.  The indexing of this field 
 is paired with the indexing of `probe.timeDelays`.
 
+#### /nirs(i)/probe/momentOrders
 
-#### /nirs(i)/probe/momentOrders 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/momentOrders`
@@ -844,8 +892,8 @@ momentOrder = 1: mean time of flight: `m = <t> = (1/N_total) \integral t N(t) dt
 momentOrder = 2: variance/second central moment: `V = (1/N_total) \integral (t - <t>)^2 N(t) dt` \
 Please note that all moments (for orders >=1) are expected to be normalized by the total counts (i.e. n=0); Additionally all moments (for orders >= 2) are expected to be centralized.
 
+#### /nirs(i)/probe/correlationTimeDelays
 
-#### /nirs(i)/probe/correlationTimeDelays 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/correlationTimeDelays`
@@ -855,8 +903,8 @@ measurements. This field is only required for diffuse correlation spectroscopy
 data types, and is indexed by `measurementList(k).dataTypeIndex`.  The indexing 
 of this field is paired with the indexing of `probe.correlationTimeDelayWidths`.
 
+#### /nirs(i)/probe/correlationTimeDelayWidths
 
-#### /nirs(i)/probe/correlationTimeDelayWidths 
 * **Presence**: optional 
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/probe/correlationTimeDelayWidth`
@@ -866,8 +914,17 @@ spectroscopy measurements. This field is only required for gated time domain
 data types, and is indexed by `measurementList(k).dataTypeIndex`. The indexing 
 of this field is paired with the indexing of `probe.correlationTimeDelays`.  
 
+#### /nirs(i)/probe/exposureTimes
 
-#### /nirs(i)/probe/sourceLabels 
+* **Presence**: optional 
+* **Type**:  numeric 1-D array
+* **Location**: `/nirs(i)/probe/exposureTime`
+
+This field describes the exposure time (in `TimeUnit` units) used for speckle contrast optical 
+spectroscopy measurements. This field is indexed by `measurementList(k).dataTypeIndex`. 
+
+#### /nirs(i)/probe/sourceLabels
+
 * **Presence**: optional 
 * **Type**:  string 2-D array
 * **Location**: `/nirs(i)/probe/sourceLabels(j)`
@@ -879,8 +936,8 @@ of sources>x 1` or `<number of sources> x <number of
 wavelengths>`. This is indexed by `measurementList(k).sourceIndex` and 
 `measurementList(k).wavelengthIndex`.
 
+#### /nirs(i)/probe/detectorLabels
 
-#### /nirs(i)/probe/detectorLabels 
 * **Presence**: optional 
 * **Type**:  string 1-D array
 * **Location**: `/nirs(i)/probe/detectorLabels(j)`
@@ -890,8 +947,8 @@ for each detector. Each element of the array must be a unique string among both
 `probe.sourceLabels` and `probe.detectorLabels`. This is indexed by 
 `measurementList(k).detectorIndex`.
 
-
 #### /nirs(i)/probe/landmarkPos2D
+
 * **Presence**: optional 
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/landmarkPos2D`
@@ -904,8 +961,8 @@ of the 2-D projected landmark positions. If a 3rd column presents, it stores
 the index to the labels of the given landmark. Label names are stored in the 
 `probe.landmarkLabels` subfield. An label index of 0 refers to an undefined landmark. 
 
-
 #### /nirs(i)/probe/landmarkPos3D
+
 * **Presence**: optional; recommended if `sourcePos3D` and `detectorPos3D` are present 
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/probe/landmarkPos3D`
@@ -918,8 +975,8 @@ of the digitized landmark positions. If a 4th column presents, it stores the
 index to the labels of the given landmark. Label names are stored in the 
 `probe.landmarkLabels` subfield. An label index of 0 refers to an undefined landmark. 
 
+#### /nirs(i)/probe/landmarkLabels(j)
 
-#### /nirs(i)/probe/landmarkLabels(j) 
 * **Presence**: optional; recommended if `landmarkPos3D` is present 
 * **Type**:  string 1-D array
 * **Location**: `/nirs(i)/probe/landmarkLabels(j)`
@@ -933,8 +990,8 @@ defined in `probe.sourceLabels` and `probe.detectorLabels`, respectively, to
 associate the given landmark to a specific source or detector. All strings are 
 ASCII encoded char arrays.
 
-
 #### /nirs(i)/probe/coordinateSystem
+
 * **Presence**: optional; recommended if `sourcePos3D` and `detectorPos3D` are present 
 * **Type**:  string
 * **Location**: `/nirs(i)/probe/coordinateSystem`
@@ -948,8 +1005,8 @@ system must be provided in `/nirs(i)/probe/coordinateSystemDescription`.
 See the [FieldTrip toolbox web page](https://www.fieldtriptoolbox.org/faq/coordsys/)
 for detailed descriptions of different coordinate systems.
 
-
 #### /nirs(i)/probe/coordinateSystemDescription
+
 * **Presence**: optional 
 * **Type**:  string
 * **Location**: `/nirs(i)/probe/coordinateSystemDescription`
@@ -959,8 +1016,8 @@ May also include a link to a documentation page or
 paper describing the system in greater detail.
 This field is required if the `coordinateSystem` field is set to "Other".
 
+#### /nirs(i)/aux(j)
 
-#### /nirs(i)/aux(j) 
 * **Presence**: optional 
 * **Type**:  indexed group
 * **Location**: `/nirs(i)/aux(j)`
@@ -968,14 +1025,16 @@ This field is required if the `coordinateSystem` field is set to "Other".
 This optional array specifies any recorded auxiliary data. Each element of 
 `aux` has the following required fields:
 
-#### /nirs(i)/aux(j)/name 
+#### /nirs(i)/aux(j)/name
+
 * **Presence**: optional; required if `aux` is used
 * **Type**:  string
 * **Location**: `/nirs(i)/aux(j)/name`
 
 This is string describing the j<sup>th</sup> auxiliary data timecourse. While auxiliary data can be given any title, standard names for commonly used auxiliary channels (i.e. accelerometer data) are specified in the appendix.
 
-#### /nirs(i)/aux(j)/dataTimeSeries 
+#### /nirs(i)/aux(j)/dataTimeSeries
+
 * **Presence**: optional; required if `aux` is used
 * **Type**:  numeric 2-D array
 * **Location**: `/nirs(i)/aux(j)/dataTimeSeries`
@@ -983,14 +1042,16 @@ This is string describing the j<sup>th</sup> auxiliary data timecourse. While au
 This is the aux data variable. This variable has dimensions of `<number of 
 time points> x <number of channels>`. If multiple channels of related data are generated by a system, they may be encoded in the multiple columns of the time series (i.e. complex numbers). For example, a system containing more than one accelerometer may output this data as a set of `ACCEL_X`/`ACCEL_Y`/`ACCEL_Z` auxiliary time series, where each has the dimension of `<number of time points> x <number of accelerometers>`. Note that it is NOT recommended to encode the various accelerometer dimensions as multiple channels of the same `aux` Group: instead follow the `"ACCEL_X"`, `"ACCEL_Y"`, `"ACCEL_Z"` naming conventions described in the appendix. Chunked data is allowed to support real-time data streaming.
 
-#### /nirs(i)/aux(j)/dataUnit 
+#### /nirs(i)/aux(j)/dataUnit
+
 * **Presence**: optional
 * **Type**:  string
 * **Location**: `/nirs(i)/aux(j)/dataUnit`
 
 International System of Units (SI units) identifier for the given channel. Encoding should follow the [CMIXF-12 standard](https://people.csail.mit.edu/jaffer/MIXF/CMIXF-12), avoiding special unicode symbols like U+03BC (μ) or U+00B5 (µ) and using '/' rather than 'per' for units such as `V/us`. The recommended export format is in unscaled units such as V, s, Mole.
 
-#### /nirs(i)/aux(j)/time 
+#### /nirs(i)/aux(j)/time
+
 * **Presence**: optional; required if `aux` is used
 * **Type**:  numeric 1-D array
 * **Location**: `/nirs(i)/aux(j)/time`
@@ -1004,7 +1065,8 @@ not need to be equal spacing. The size of this variable is
 
 Chunked data is allowed to support real-time data streaming
 
-#### /nirs(i)/aux(j)/timeOffset 
+#### /nirs(i)/aux(j)/timeOffset
+
 * **Presence**: optional 
 * **Type**:  numeric
 * **Location**: `/nirs(i)/aux(j)/timeOffset`
@@ -1012,80 +1074,93 @@ Chunked data is allowed to support real-time data streaming
 This variable specifies the offset of the file time origin relative to absolute
 (clock) time in `TimeUnit` units.
 
-
 ## Appendix
 
 ### Supported `measurementList(k).dataType` values in `dataTimeSeries`
 
 + 001-100:  Raw - Continuous Wave (CW)
-   - 001 - Amplitude
-   - 051 - Fluorescence Amplitude
+
+  - 001 - Amplitude
+  - 051 - Fluorescence Amplitude
 
 + 101-200:  Raw - Frequency Domain (FD)
-   - 101 - AC Amplitude
-   - 102 - Phase
-   - 151 - Fluorescence Amplitude
-   - 152 - Fluorescence Phase
+
+  - 101 - AC Amplitude
+  - 102 - Phase
+  - 151 - Fluorescence Amplitude
+  - 152 - Fluorescence Phase
 
 + 201-300: Raw - Time Domain - Gated (TD Gated)
-   - 201 - Amplitude
-   - 251 - Fluorescence Amplitude
-+ 301-400:  Raw - Time domain – Moments (TD Moments)
-   - 301 - Amplitude
-   - 351 - Fluorescence Amplitude
-+ 401-500:  Raw - Diffuse Correlation Spectroscopy (DCS):
-   - 401 - g2
-   - 410 - BFi
-+ 99999:  Processed
 
+  - 201 - Amplitude
+  - 251 - Fluorescence Amplitude
+
++ 301-400:  Raw - Time domain – Moments (TD Moments)
+
+  - 301 - Amplitude
+  - 351 - Fluorescence Amplitude
+
++ 401-500:  Raw - Diffuse Correlation Spectroscopy (DCS):
+
+  - 401 - g2
+  - 410 - BFi
+
++ 501-600: Raw - Speckle Contrast Optical Spectroscopy (SCOS)
+
+  + 501 - Intensity mean
+
+  + 502 - Intensity variance
+
+  + 503 - corrected speckle contrast
+
++ 99999:  Processed
 
 ### Supported `measurementList(k).dataTypeLabel` values in `dataTimeSeries`
 
-| Tag Name  |                           Meanings                               |
-|-----------|------------------------------------------------------------------|
-|"dOD"      | Change in optical density                                        |
-|"dMean"    | Change in mean time-of-flight                                    |
-|"dVar"     | Change in variance (2nd central moment)                          |
-|"dSkew"    | Change in skewness (3rd central moment)                          |
-|"mua"      | Absorption coefficient                                           |
-|"musp"     | Scattering coefficient                                           |
-|"HbO"      | Oxygenated hemoglobin (oxyhemoglobin) concentration              |
-|"HbR"      | Deoxygenated hemoglobin (deoxyhemoglobin) concentration          |
-|"HbT"      | Total hemoglobin concentration                                   |
-|"H2O"      | Water content                                                    |
-|"Lipid"    | Lipid concentration                                              |
-|"StO2"     | Tissue oxygen saturation                                         |
-|"BFi"      | Blood flow index                                                 |
-|"HRF dOD"  | Hemodynamic response function for change in optical density      |
-|"HRF dMean"| HRF for change in mean time-of-flight                            |
-|"HRF dVar" | HRF for change in variance (2nd central moment)                  |
-|"HRF dSkew"| HRF for change in skewness (3rd central moment)                  |
-|"HRF HbO"  | Hemodynamic response function for oxyhemoglobin concentration    |
-|"HRF HbR"  | Hemodynamic response function for deoxyhemoglobin concentration  |
-|"HRF HbT"  | Hemodynamic response function for total hemoglobin concentration |
-|"HRF BFi"  | Hemodynamic response function for blood flow index               |
-
+| Tag Name    | Meanings                                                         |
+| ----------- | ---------------------------------------------------------------- |
+| "dOD"       | Change in optical density                                        |
+| "dMean"     | Change in mean time-of-flight                                    |
+| "dVar"      | Change in variance (2nd central moment)                          |
+| "dSkew"     | Change in skewness (3rd central moment)                          |
+| "mua"       | Absorption coefficient                                           |
+| "musp"      | Scattering coefficient                                           |
+| "HbO"       | Oxygenated hemoglobin (oxyhemoglobin) concentration              |
+| "HbR"       | Deoxygenated hemoglobin (deoxyhemoglobin) concentration          |
+| "HbT"       | Total hemoglobin concentration                                   |
+| "H2O"       | Water content                                                    |
+| "Lipid"     | Lipid concentration                                              |
+| "StO2"      | Tissue oxygen saturation                                         |
+| "BFi"       | Blood flow index                                                 |
+| "HRF dOD"   | Hemodynamic response function for change in optical density      |
+| "HRF dMean" | HRF for change in mean time-of-flight                            |
+| "HRF dVar"  | HRF for change in variance (2nd central moment)                  |
+| "HRF dSkew" | HRF for change in skewness (3rd central moment)                  |
+| "HRF HbO"   | Hemodynamic response function for oxyhemoglobin concentration    |
+| "HRF HbR"   | Hemodynamic response function for deoxyhemoglobin concentration  |
+| "HRF HbT"   | Hemodynamic response function for total hemoglobin concentration |
+| "HRF BFi"   | Hemodynamic response function for blood flow index               |
 
 ### Supported `/nirs(i)/aux(j)/name` values
 
-| Tag Name  |                           Meanings                               |
-|-----------|------------------------------------------------------------------|
-|"ACCEL_X"  | Accelerometer data, first axis of orientation                    |
-|"ACCEL_Y"  | Accelerometer data, second axis of orientation                   |
-|"ACCEL_Z"  | Accelerometer data, third axis of orientation                    |
-|"GYRO_X"   | Gyrometer data, first axis of orientation                        |
-|"GYRO_Y"   | Gyrometer data, second axis of orientation                       |
-|"GYRO_Z"   | Gyrometer data, third axis of orientation                        |
-|"MAGN_X"   | Magnetometer data, first axis of orientation                     |
-|"MAGN_Y"   | Magnetometer data, second axis of orientation                    |
-|"MAGN_Z"   | Magnetometer data, third axis of orientation                     |
-
+| Tag Name  | Meanings                                       |
+| --------- | ---------------------------------------------- |
+| "ACCEL_X" | Accelerometer data, first axis of orientation  |
+| "ACCEL_Y" | Accelerometer data, second axis of orientation |
+| "ACCEL_Z" | Accelerometer data, third axis of orientation  |
+| "GYRO_X"  | Gyrometer data, first axis of orientation      |
+| "GYRO_Y"  | Gyrometer data, second axis of orientation     |
+| "GYRO_Z"  | Gyrometer data, third axis of orientation      |
+| "MAGN_X"  | Magnetometer data, first axis of orientation   |
+| "MAGN_Y"  | Magnetometer data, second axis of orientation  |
+| "MAGN_Z"  | Magnetometer data, third axis of orientation   |
 
 ### Examples of stimulus waveforms
 
 Assume there are 10 time points, starting at zero, spaced 0.1s apart.  If we 
 assume a stimulus to be a 0.2 second off, 0.2 second on repeating block, it 
 would be specified as follows:
+
 ```
   [0.2 0.2 1.0]
   [0.6 0.2 1.0]
@@ -1098,6 +1173,7 @@ The following code demonstrates how to use the Python `h5py` and `numpy` librari
 #### String `"s"`
 
 **MATLAB**
+
 ```matlab
 fid = H5F.open(<SNIRF file path>, 'H5F_ACC_RDWR', 'H5P_DEFAULT')
 sid = H5S.create('H5S_SCALAR')
@@ -1106,7 +1182,9 @@ H5T.set_size(tid, 'H5T_VARIABLE');
 did = H5D.create(fid, <dataset location>, tid, sid, 'H5P_DEFAULT')
 H5D.write(did, tid, 'H5S_ALL', 'H5S_ALL', 'H5P_DEFAULT', <value of string>)
 ```
+
 **Python**
+
 ```python
 file = h5py.File(<SNIRF file path>, 'r+')
 varlen_str_dtype = h5py.string_dtype(encoding='ascii', length=None)
@@ -1116,6 +1194,7 @@ file.create_dataset(<dataset location>, dtype=varlen_str_dtype, data=<value of s
 #### numeric `<f>`
 
 **MATLAB**
+
 ```matlab
 fid = H5F.open(<SNIRF file path>, 'H5F_ACC_RDWR', 'H5P_DEFAULT')
 tid = H5T.copy('H5T_NATIVE_DOUBLE')
@@ -1123,14 +1202,18 @@ sid = H5S.create('H5S_SCALAR')
 H5D.create(fid, <dataset location>, tid, sid, 'H5P_DEFAULT')
 h5write(<SNIRF file path>, <dataset location>, <value of numeric>)
 ```
+
 **Python**
+
 ```python
 file = h5py.File(<SNIRF file path>, 'r+')
 file.create_dataset(<dataset location>, dtype='f8', data=<value of numeric>)
 ```
 
 #### integer `<i>`
+
 **MATLAB**
+
 ```matlab
 fid = H5F.open(<SNIRF file path>, 'H5F_ACC_RDWR', 'H5P_DEFAULT')
 tid = H5T.copy('H5T_NATIVE_INT')
@@ -1138,14 +1221,18 @@ sid = H5S.create('H5S_SCALAR')
 H5D.create(fid, <dataset location>, tid, sid, 'H5P_DEFAULT')
 h5write(<SNIRF file path>, <dataset location>, <value of integer>)
 ```
+
 **Python**
+
 ```python
 file = h5py.File(<SNIRF file path>, 'r+')
 file.create_dataset(<dataset location>, dtype='i4', data=<value of integer>)
 ```
 
 #### string array `["s",...]`
+
 **MATLAB**
+
 ```matlab
 fid = H5F.open(<SNIRF file path>, 'H5F_ACC_RDWR', 'H5P_DEFAULT')
 
@@ -1163,23 +1250,31 @@ did = H5D.create(fid, <dataset location>, tid, sid, pid)
 
 H5D.write(did, tid, 'H5S_ALL', 'H5S_ALL', 'H5P_DEFAULT', str_arr)
 ```
+
 **Python**
+
 ```python
 array = numpy.array(<list of strings>).astype('O')  # A list of strings must be converted to a NumPy list with dtype 'O'
 file = h5py.File(<SNIRF file path>, 'r+')
 varlen_str_dtype = h5py.string_dtype(encoding='ascii', length=None)
 file.create_dataset(<dataset location>, dtype=varlen_str_dtype, data=array)
 ```
+
 #### numeric array `[<f>,...]` or `[[<f>,...]]`
+
 **MATLAB**
+
 > Note: Because MATLAB has no notion of arrays with fewer than 2 dimensions, using `size(data)` as the 3rd argument of 
-`h5create` will erroneously save arrays with 1 dimension as a row or column vector of 2 dimensions. In the 1D case, use `length(data)` as the 3rd argument of `h5create`.
+> `h5create` will erroneously save arrays with 1 dimension as a row or column vector of 2 dimensions. In the 1D case, use `length(data)` as the 3rd argument of `h5create`.
+
 ```matlab
 data = <numeric array>
 h5create(<SNIRF file path>, <dataset location>, length(data) / size(data), 'Datatype', 'double')
 h5write(<SNIRF file path>, <dataset location>, data)
 ```
+
 **Python**
+
 ```python
 array = numpy.array(<numeric array>).astype(numpy.float64)  # A list or nested list of values should be converted to a NumPy array
 file = h5py.File(<SNIRF file path>, 'r+')
@@ -1189,14 +1284,18 @@ file.create_dataset(<dataset location>, dtype='f8', data=array)
 #### integer array `[<i>,...]` or `[[<i>,...]]`
 
 **MATLAB**
+
 > Note: Because MATLAB has no notion of arrays with fewer than 2 dimensions, using `size(data)` as the 3rd argument of 
-`h5create` will erroneously save arrays with 1 dimension as a row or column vector of 2 dimensions. In the 1D case, use `length(data)` as the 3rd argument of `h5create`.
+> `h5create` will erroneously save arrays with 1 dimension as a row or column vector of 2 dimensions. In the 1D case, use `length(data)` as the 3rd argument of `h5create`.
+
 ```matlab
 data = <integer array>
 h5create(<SNIRF file path>, <integer array dataset location>, length(data) / size(data), 'Datatype', 'int32')
 h5write(<SNIRF file path>, <integer array dataset location>, data)
 ```
+
 **Python**
+
 ```python
 array = numpy.array(<integer array>).astype(int)  # A list or nested list of values should be converted to a NumPy array
 file = h5py.File(<SNIRF file path>, 'r+')
@@ -1209,6 +1308,7 @@ This document was originally drafted by Blaise Frederic (bbfrederick at
 mclean.harvard.edu) and David Boas (dboas at bu.edu).
 
 Other significant contributors to this specification include:
+
 - Theodore Huppert (huppert1 at pitt.edu)
 - Jay Dubb (jdubb at bu.edu)
 - Qianqian Fang (q.fang at neu.edu)
@@ -1218,6 +1318,7 @@ hardware interests are also contributing to and supporting the adoption of this
 specification:
 
 ### Software
+
 - Ata Akin, Acıbadem University
 - Hasan Ayaz, Drexel University
 - Joe Culver, University of Washington, neuroDOT
@@ -1235,6 +1336,7 @@ specification:
 - Robert Oostenveld, Radboud University, FieldTrip
 
 ### Hardware
+
 - Hirokazu Asaka, Hitachi
 - Rob Cooper, Gower Labs Inc
 - Mathieu Coursolle, Rogue Research
