@@ -228,6 +228,8 @@ Note that this table serves as machine-readable schema for the SNIRF format. Its
 |         `time`                        | * Time (in `TimeUnit`) for auxiliary data    |  `[<f>,...]` + |
 |         `timeOffset`                  | * Time offset of auxiliary channel data      |  `[<f>,...]`   |
 
+[//]: # (SCHEMA END)
+
 In the above schema table, the used notations are explained below:
 * `{.}` represents a simple HDF5 group
 * `{i}` represents an HDF5 group with one or multiple sub-groups (i.e. an indexed-group)
