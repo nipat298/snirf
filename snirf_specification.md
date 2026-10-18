@@ -60,6 +60,7 @@ Shared Near Infrared Spectroscopy Format (SNIRF) Specification
        * [probe.momentOrders](#nirsiprobemomentorders)
        * [probe.correlationTimeDelays](#nirsiprobecorrelationtimedelays)
        * [probe.correlationTimeDelayWidths](#nirsiprobecorrelationtimedelaywidths)
+       * [probe.exposureTimes](#nirsiprobeexposuretimes)
        * [probe.sourceLabels](#nirsiprobesourcelabels)
        * [probe.detectorLabels](#nirsiprobedetectorlabels)
        * [probe.landmarkPos2D](#nirsiprobelandmarkpos2d)
@@ -650,7 +651,7 @@ Data-type label. A 1-D array with length equal to the size of the second dimensi
 * **Type**:  integer 1-D array
 * **Location**: `/nirs(i)/data(j)/measurementLists/dataTypeIndex`
 
-Data-type specific parameter indices. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Note that the Time Domain, Diffuse Correlation Spectroscopy and Speckle Contrast Optical Spectroscopy data types have two additional parameters and so `dataTimeIndex` must be a 2-D array with 2 columns that index the additional parameters.
+Data-type specific parameter indices. A 1-D array with length equal to the size of the second dimension of `/nirs(i)/data(j)/dataTimeSeries`. Note that the Time Domain, Diffuse Correlation Spectroscopy and Speckle Contrast Optical Spectroscopy data types have two additional parameters and so `dataTypeIndex` must be a 2-D array with 2 columns that index the additional parameters.
 
 #### /nirs(i)/data(j)/measurementLists/sourcePower 
 * **Presence**: optional
@@ -1030,13 +1031,11 @@ This variable specifies the offset of the file time origin relative to absolute
 + 001-100:  Raw - Continuous Wave (CW)
    - 001 - Amplitude
    - 051 - Fluorescence Amplitude
-
 + 101-200:  Raw - Frequency Domain (FD)
    - 101 - AC Amplitude
    - 102 - Phase
    - 151 - Fluorescence Amplitude
    - 152 - Fluorescence Phase
-
 + 201-300: Raw - Time Domain - Gated (TD Gated)
    - 201 - Amplitude
    - 251 - Fluorescence Amplitude
@@ -1047,12 +1046,9 @@ This variable specifies the offset of the file time origin relative to absolute
    - 401 - g2
    - 410 - BFi
 + 501-600: Raw - Speckle Contrast Optical Spectroscopy (SCOS)
-
-  + 501 - Intensity mean
-
-  + 502 - Intensity variance
-
-  + 503 - corrected speckle contrast
+   - 501 - Intensity mean
+   - 502 - Intensity variance
+   - 503 - corrected speckle contrast
 
 + 99999:  Processed
 
